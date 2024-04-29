@@ -1,104 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        .container {
-  color: white;
-  position: relative;
-  font-family: sans-serif;
-}
+{% extends "base.html" %}
+{% block content %}
+    {% load static %}
 
-.container::before,
-.container::after {
-  content: "";
-  background-color: #fab5704c;
-  position: absolute;
-}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <div><br><br></div>
 
-.container::before {
-  border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
-  top: 30%;
-  right: 7%;
-}
-
-.container::after {
-  content: "";
-  position: absolute;
-  height: 3rem;
-  top: 8%;
-  right: 5%;
-  border: 1px solid;
-}
-
-.container .box {
-  width: 45em;
-  height: 25em;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.074);
-  border: 1px solid rgba(255, 255, 255, 0.222);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  border-radius: 0.7rem;
-  transition: all ease 0.3s;
-}
-
-.container .box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.container .box .title {
-  font-size: 2rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-}
-
-.container .box div strong {
-  display: block;
-  margin-bottom: 13.5rem;
-}
-
-.container .box div p {
-  margin: 0;
-  font-size: 0.9em;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-}
-
-.container .box div span {
-  font-size: 0.7rem;
-  font-weight: 300;
-}
-
-.container .box div span:nth-child(3) {
-  font-weight: 500;
-  margin-right: 0.2rem;
-}
-
-.container .box:hover {
-  box-shadow: 0px 0px 20px 1px #ffbb763f;
-  border: 1px solid rgba(255, 255, 255, 0.454);
-}
-
-
-    </style>
-</head>
-
-<body class="bg-black">
-<div class="container">
-  <div class="box">
-    <span class="title">Software Developer</span>
-    <div>
-      <strong>Aayush kumar Singh</strong>
-      <p>0000 000 000 0000</p>
-      <span>VALID</span> <span>01/28</span>
+    <div class="flex container mx-auto px-4">
+    <div class="border border-slate-300 hover:border-slate-400 rounded-2xl box-border h-150 w-60 p-3 border-4">
+        <img src="{% static 'aayush.png' %}" alt="Image">
     </div>
-  </div>
-</div>
-</body>
-</html>
+        <div class="box-border h-3 w-3 p-1"></div>
+    <div class="border border-slate-300 hover:border-slate-400 container mx-auto px-4 rounded-2xl shadow-lg hover:shadow-2xl outline hover:outline-2 bg-[#8b5cf6] text-black box-border h-150 w-120 p-4 border-4">
+        <div class="title align-left font-serif font-bold tracking-wide text-2xl ">Aayush kumar singh</div>
+        <div class="align-center font-serif tracking-wide text-xl">Welcome to my portfolio! I am passionate about development and strive to deliver excellence in every project I undertake. My aim is to contribute to a progressive and growth-oriented organization where I can work on challenging projects and continue learning new skills.Welcome to my portfolio! I am passionate about development and strive to deliver excellence in every project I undertake. My aim is to contribute to a progressive and growth-oriented organization where I can work on challenging projects and continue learning new skills.</div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div class="container mx-auto" >
+    <div class="underline underline-offset-1 font-serif text-3xl font-bold">
+        Education :
+    </div>
+        <br>
+    <div class="border bg-[#8b5cf6] rounded-xl p-3 outline">
+        <div class="title align-left font-serif font-bold tracking-wide text-2xl"> Chandigarh University </div>
+        <div class="align-left font-serif tracking-wide text-2xl">Course : Bachelors in Engineering</div>
+        <div class="align-left font-serif tracking-wide text-2xl">Stream : Computer Science and Engineering</div>
+        <div class="align-left font-serif tracking-wide text-xl">CGPA : 7.87</div>
+    </div>
+        <br>
+    <div class="border bg-[#8b5cf6] rounded-xl p-3 outline">
+        <div class="title align-left font-serif font-bold tracking-wide text-2xl"> St. Karen's Secondary School </div>
+        <div class="align-left font-serif tracking-wide text-2xl">Stream : PCM (Physics Chemistry Maths)</div>
+        <div class="align-left font-serif tracking-wide text-2xl">Year of Completion : 2021</div>
+        <div class="align-left font-serif tracking-wide text-xl">Percentage : 81 % </div>
+    </div>
+    </div>
+
+{% endblock %}

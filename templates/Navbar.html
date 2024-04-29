@@ -6,8 +6,10 @@
 
 </head>
 <body>
-<!-- component -->
+
 <script src="https://cdn.tailwindcss.com"></script>
+
+
 <style>
 
   .header-links li span {
@@ -30,19 +32,25 @@
     background-color: #fcae04;
   }
 
+  .header-links li.active span::after {
+    background-color: #fcae04;
+  }
+
   .header-links li:not(.active):hover span::before {
     background-color: #ccc;
   }
 </style>
 
+
+{% load static %}
 <header class="bg-white shadow-lg h-24 hidden md:flex">
-  <a href="" class="border flex-shrink-0 flex items-center justify-center px-3 lg:px-6 xl:px-6">
-    <img class="object-cover h-48 w-96" src="./images/Logo.svg"/>
+  <a href="#" class="border flex-shrink-0 flex items-center justify-center px-3 lg:px-6 xl:px-6">
+    <img class="object-cover h-48 w-96" src="{% static "Logo.svg" %}"/>
   </a>
   <nav class="header-links contents font-semibold text-base lg:text-lg">
     <ul class="flex items-center ml-4 xl:ml-8 mr-auto">
       <li class="p-3 xl:p-6 active">
-        <a href="">
+        <a href="{% url 'HomePage' %}">
           <span>Home</span>
         </a>
       </li>
@@ -53,7 +61,7 @@
         </a>
       </li>
       <li class="p-3 xl:p-6">
-        <a href="">
+        <a href="{% url 'Projects' %}" target="_self">
           <span>Projects</span>
         </a>
       </li>
