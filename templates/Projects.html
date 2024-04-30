@@ -1,8 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
-    <div>
-    <div class="border box-border h-60 w-60 p-3">
-        Project 1
+    {% load static %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <br>
+    <div class="border align-center">
+    <div class="flex">
+        <div class="box-border w-5 p-1"></div>
+        <div class="border box-border w-60 p-3 text-3xl font-bold align-center font-serif">
+            My Projects :
+        </div>
     </div>
+    <br>
+    <div class="border md:container md:mx-auto px-1 p-1 bg-[#8b5cf6] rounded-2xl outline hover:outline-2 hover:shadow-lg flex">
+        <div class="container border px-2">
+            <div class="title align-left font-serif font-bold tracking-wide text-2xl p-1">Project Title</div>
+            <div class="align-left font-serif font-bold tracking-wide text-l p-1">Project Description</div>
+            <div class="align-left font-serif font-bold tracking-wide text-l p-3 underline underline-offset-2"> Technologies used : </div>
+        </div>
+        <div>
+            <img src="{% static 'aayush.png' %}" alt="image" class="border w-60 rounded-xl">
+        </div>
+    </div>
+
     </div>
 {% endblock %}
