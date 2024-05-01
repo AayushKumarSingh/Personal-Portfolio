@@ -1,39 +1,38 @@
 {% extends "base.html" %}
 {% block content %}
     {% load static %}
-
-    <div><br><br></div>
+<script src="https://cdn.tailwindcss.com"></script>
+    <div class="h-10"></div>
 
     <div class="flex md:container md:mx-auto px-4">
-    <div class="border border-slate-300 hover:border-slate-400 rounded-2xl box-border h-150 w-60 p-3 border-4">
-        <img src="{% static 'aayush.png' %}" alt="Image">
+        <div class="border border-slate-300 hover:border-slate-400 rounded-2xl box-border h-150 w-60 p-3 border-4">
+            <img src="{% static 'aayush.png' %}" alt="Image">
+        </div>
+            <div class="box-border h-3 w-3 p-1"></div>
+        <div class="border border-slate-300 hover:border-slate-400 container mx-auto px-4 rounded-2xl shadow-lg hover:shadow-2xl outline hover:outline-2 bg-[#8b5cf6] text-black box-border h-150 w-120 p-4 border-4">
+            <div class="title align-left font-serif font-bold tracking-wide text-2xl ">Aayush kumar singh</div>
+            <div class="align-center font-serif tracking-wide text-xl">Welcome to my portfolio! I am passionate about development and strive to deliver excellence in every project I undertake. My aim is to contribute to a progressive and growth-oriented organization where I can work on challenging projects and continue learning new skills.Welcome to my portfolio! I am passionate about development and strive to deliver excellence in every project I undertake. My aim is to contribute to a progressive and growth-oriented organization where I can work on challenging projects and continue learning new skills.</div>
+        </div>
     </div>
-        <div class="box-border h-3 w-3 p-1"></div>
-    <div class="border border-slate-300 hover:border-slate-400 container mx-auto px-4 rounded-2xl shadow-lg hover:shadow-2xl outline hover:outline-2 bg-[#8b5cf6] text-black box-border h-150 w-120 p-4 border-4">
-        <div class="title align-left font-serif font-bold tracking-wide text-2xl ">Aayush kumar singh</div>
-        <div class="align-center font-serif tracking-wide text-xl">Welcome to my portfolio! I am passionate about development and strive to deliver excellence in every project I undertake. My aim is to contribute to a progressive and growth-oriented organization where I can work on challenging projects and continue learning new skills.Welcome to my portfolio! I am passionate about development and strive to deliver excellence in every project I undertake. My aim is to contribute to a progressive and growth-oriented organization where I can work on challenging projects and continue learning new skills.</div>
-    </div>
-    </div>
-    <br>
-    <br>
+    <div class="h-8"></div>
     <div class="md:container md:mx-auto" >
-    <div class="underline underline-offset-1 font-serif text-3xl font-bold">
-        Education :
-    </div>
+        <div class="underline underline-offset-1 font-serif text-3xl font-bold">
+            Education :
+        </div>
         <br>
-    <div class="border bg-[#8b5cf6] rounded-xl p-3 outline">
-        <div class="title align-left font-serif font-bold tracking-wide text-2xl"> Chandigarh University </div>
-        <div class="align-left font-serif tracking-wide text-2xl">Course : Bachelors in Engineering</div>
-        <div class="align-left font-serif tracking-wide text-2xl">Stream : Computer Science and Engineering</div>
-        <div class="align-left font-serif tracking-wide text-xl">CGPA : 7.87</div>
-    </div>
-        <br>
-    <div class="border bg-[#8b5cf6] rounded-xl p-3 outline">
-        <div class="title align-left font-serif font-bold tracking-wide text-2xl"> St. Karen's Secondary School </div>
-        <div class="align-left font-serif tracking-wide text-2xl">Stream : PCM (Physics Chemistry Maths)</div>
-        <div class="align-left font-serif tracking-wide text-2xl">Year of Completion : 2021</div>
-        <div class="align-left font-serif tracking-wide text-xl">Percentage : 81 % </div>
-    </div>
+        <div class="border bg-[#8b5cf6] rounded-xl p-3 outline">
+            <div class="title align-left font-serif font-bold tracking-wide text-2xl"> Chandigarh University </div>
+            <div class="align-left font-serif tracking-wide text-2xl">Course : Bachelors in Engineering</div>
+            <div class="align-left font-serif tracking-wide text-2xl">Stream : Computer Science and Engineering</div>
+            <div class="align-left font-serif tracking-wide text-xl">CGPA : 7.87</div>
+        </div>
+            <div class="h-3"></div>
+        <div class="border bg-[#8b5cf6] rounded-xl p-3 outline">
+            <div class="title align-left font-serif font-bold tracking-wide text-2xl"> St. Karen's Secondary School </div>
+            <div class="align-left font-serif tracking-wide text-2xl">Stream : PCM (Physics Chemistry Maths)</div>
+            <div class="align-left font-serif tracking-wide text-2xl">Year of Completion : 2021</div>
+            <div class="align-left font-serif tracking-wide text-xl">Percentage : 81 % </div>
+        </div>
     </div>
 
 {% endblock %}

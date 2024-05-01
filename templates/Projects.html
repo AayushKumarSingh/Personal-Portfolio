@@ -1,26 +1,115 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
-    {% load static %}
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <br>
-    <div class="border align-center">
+    <br>
+
+    <! Title >
+    <div class="align-center">
     <div class="flex">
         <div class="box-border w-5 p-1"></div>
-        <div class="border box-border w-60 p-3 text-3xl font-bold align-center font-serif">
+        <div class="box-border w-60 px-3 text-3xl font-bold align-center font-serif">
             My Projects :
         </div>
     </div>
+
+    <div class="flex">
+        <div class="box-border w-5 p-1"></div>
+        <div class="w-[15rem] h-2 bg-[#aaff00] rounded-2xl"></div>
+    </div>
+
     <br>
-    <div class="border md:container md:mx-auto px-1 p-1 bg-[#8b5cf6] rounded-2xl outline hover:outline-2 hover:shadow-lg flex">
-        <div class="container border px-2">
-            <div class="title align-left font-serif font-bold tracking-wide text-2xl p-1">Project Title</div>
-            <div class="align-left font-serif font-bold tracking-wide text-l p-1">Project Description</div>
-            <div class="align-left font-serif font-bold tracking-wide text-l p-3 underline underline-offset-2"> Technologies used : </div>
+
+    <! Project Card>
+    <div class="md:container md:mx-auto px-1 p-1 bg-[#8b5cf6] rounded-2xl outline hover:outline-2 hover:shadow-lg flex">
+        <div class="container px-2 font-serif font-bold">
+            <div class="title align-left tracking-wide text-2xl p-1">Project Title</div>
+            <div class="align-left tracking-wide text-l p-1">Project Description</div>
+            <div class="align-left tracking-wide text-l p-3 underline underline-offset-2"> Technologies used : </div>
+            <div class="flex items-center ml-4 xl:ml-8 mr-auto">
+                <div class="container bg-[#166661] rounded-full w-[5rem] box-border border px-3">Python</div>
+                <div class="w-1"></div>
+                <div class="container bg-[#166661] rounded-full w-[5.5rem] box-border border px-3">Sklearn</div>
+                <div class="w-1"></div>
+                <div class="container bg-[#166661] rounded-full w-[7rem] box-border border px-3">Matplotlib</div>
+            </div>
+            <br>
+
+            <! Link to project repo>
+            <div class="border w-[6rem] rounded-xl py-1 bg-[#cc66ff] hover:bg-gray-700 hover:shadow-lg">
+                <a href="#" class="" target="_blank">
+                    <div class="">Click to see</div>
+                </a>
+            </div>
         </div>
+
+        <! image for Project>
         <div>
             <img src="{% static 'aayush.png' %}" alt="image" class="border w-60 rounded-xl">
         </div>
     </div>
+    <! Spacing>
+    <div class="h-3"></div>
 
+    <div class="md:container md:mx-auto px-1 p-1 bg-[#8b5cf6] rounded-2xl outline hover:outline-2 hover:shadow-lg flex">
+        <div class="container px-2 font-serif font-bold">
+            <div class="title align-left tracking-wide text-2xl p-1">Project Title</div>
+            <div class="align-left tracking-wide text-l p-1">Project Description</div>
+            <div class="align-left tracking-wide text-l p-3 underline underline-offset-2"> Technologies used : </div>
+            <div class="flex items-center ml-4 xl:ml-8 mr-auto">
+                <div class="container bg-[#166661] rounded-full w-[5rem] box-border border px-3">Python</div>
+                <div class="w-1"></div>
+                <div class="container bg-[#166661] rounded-full w-[5.5rem] box-border border px-3">Sklearn</div>
+                <div class="w-1"></div>
+                <div class="container bg-[#166661] rounded-full w-[7rem] box-border border px-3">Matplotlib</div>
+            </div>
+            <br>
+
+            <! Link to project repo>
+            <div class="border w-[6rem] rounded-xl py-1 bg-[#cc66ff] hover:bg-gray-700 hover:shadow-lg">
+                <a href="#" class="" target="_blank">
+                    <div class="">Click to see</div>
+                </a>
+            </div>
+        </div>
+
+        <! image for Project>
+        <div>
+            <img src="{% static 'aayush.png' %}" alt="image" class="border w-60 rounded-xl">
+        </div>
+    </div>
+    <! Spacing>
+    <div class="h-3"></div>
+
+    <div class="md:container md:mx-auto px-1 p-1 bg-[#8b5cf6] rounded-2xl outline hover:outline-2 hover:shadow-lg flex">
+        <div class="container px-2 font-serif font-bold">
+            <div class="title align-left tracking-wide text-2xl p-1">Project Title</div>
+            <div class="align-left tracking-wide text-l p-1">Project Description</div>
+            <div class="align-left tracking-wide text-l p-3 underline underline-offset-2"> Technologies used : </div>
+            <div class="flex items-center ml-4 xl:ml-8 mr-auto">
+                <div class="container bg-[#166661] rounded-full w-[5rem] box-border border px-3">Python</div>
+                <div class="w-1"></div>
+                <div class="container bg-[#166661] rounded-full w-[5.5rem] box-border border px-3">Sklearn</div>
+                <div class="w-1"></div>
+                <div class="container bg-[#166661] rounded-full w-[7rem] box-border border px-3">Matplotlib</div>
+            </div>
+            <br>
+
+            <! Link to project repo>
+            <div class="border w-[6rem] rounded-xl py-1 bg-[#cc66ff] hover:bg-gray-700 hover:shadow-lg">
+                <a href="#" class="" target="_blank">
+                    <div class="">Click to see</div>
+                </a>
+            </div>
+        </div>
+
+        <! image for Project>
+        <div class="">
+            <img src="{% static 'aayush.png' %}" alt="image" class="border w-60 rounded-xl">
+        </div>
+    </div>
     </div>
 {% endblock %}
