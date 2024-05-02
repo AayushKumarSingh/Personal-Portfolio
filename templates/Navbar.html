@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 
 </head>
-<body>
+<body background="{% static 'background.png' %}">
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -26,7 +28,6 @@
 
 
 <style>
-
   .header-links li span {
     position: relative;
     z-index: 0;
@@ -84,7 +85,7 @@
       </li>
     </ul>
   </nav>
-  <nav class="hidden xl:contents">
+  <nav class="hidden xl:contents z-1">
     <ul class="flex items-center mr-4 lg:mr-6 xl:mr-8">
       <li class="p-1">
         <a href="https://www.facebook.com/people/Aayush-Kumar-Singh/pfbid0uhA1zSWpjMGwprTvcCARbyviYT1rmzVvvpqeSSNKC7eNCe9ZCSDdyzRsJbAUXDv1l/" class="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5" target="_blank">
