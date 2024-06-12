@@ -27,6 +27,68 @@
 
 
 <style>
+    img {
+        pointer-events: none;
+    }
+
+    .button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgb(20, 20, 20);
+      border: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+      cursor: pointer;
+      transition-duration: 0.3s;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .svgIcon {
+      width: 12px;
+      transition-duration: 0.3s;
+    }
+
+    .svgIcon path {
+      fill: white;
+    }
+
+    .button:hover {
+      width: 140px;
+      border-radius: 50px;
+      transition-duration: 0.3s;
+      background-color: rgb(181, 160, 255);
+      align-items: center;
+    }
+
+    .button:hover .svgIcon {
+      /* width: 20px; */
+      transition-duration: 0.3s;
+      transform: translateY(-200%);
+    }
+
+    .button::before {
+      position: absolute;
+      bottom: -20px;
+      content: "View Site";
+      color: white;
+      /* transition-duration: .3s; */
+      font-size: 0px;
+    }
+
+    .button:hover::before {
+      font-size: 13px;
+      opacity: 1;
+      bottom: unset;
+      /* transform: translateY(-30px); */
+      transition-duration: 0.3s;
+    }
+
+
     .header-links li span {
         position: relative;
         z-index: 0;
@@ -89,7 +151,7 @@
                 <a href="https://www.facebook.com/people/Aayush-Kumar-Singh/pfbid0uhA1zSWpjMGwprTvcCARbyviYT1rmzVvvpqeSSNKC7eNCe9ZCSDdyzRsJbAUXDv1l/"
                    class="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
                    target="_blank">
-                    <svg class="h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
+                    <svg class="h-6" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
                          class="svg-inline--fa fa-facebook-f fa-w-10 fa-7x">
                         <path fill="currentColor"
@@ -101,7 +163,7 @@
                 <a href="https://www.linkedin.com/in/aayush-kumar-singh-41b560231/"
                    class="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
                    target="_blank">
-                    <svg class="h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in"
+                    <svg class="h-6" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in"
                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
                          class="svg-inline--fa fa-linkedin-in fa-w-14 fa-9x">
                         <path fill="currentColor"
@@ -113,7 +175,7 @@
                 <a href="https://www.instagram.com/aayushkumarsingh2002/"
                    class="inline-block rounded-full border p-2 hover:shadow-lg hover:border-opacity-0 duration-200 hover:-translate-y-0.5"
                    target="_blank">
-                    <svg class="h-4" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+                    <svg class="h-6" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
                          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
                          class="svg-inline--fa fa-instagram fa-w-14 fa-9x">
                         <path fill="currentColor"
